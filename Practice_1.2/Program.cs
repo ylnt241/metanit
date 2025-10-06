@@ -82,34 +82,34 @@ using System.IO.Pipelines;
 // Console.WriteLine("error");
 // Упражнение 4
 // Напишите программу, в которую пользователь вводит два числа и выводит результат их умножения. При этом программа должны запрашивать у пользователя ввод чисел, пока оба вводимых числа не окажутся в диапазоне от 0 до 10. Если введенные числа окажутся больше 10 или меньше 0, то программа должна вывести пользователю о том, что введенные числа недопустимы, и повторно запросить у пользователя ввод двух чисел. Если введенные числа принадлежат диапазону от 0 до 10, то программа выводит результат умножения.
-class Program
-{
-    public static (sbyte, sbyte) GetInput()
-    {
-        do
-        {
-            try
-            {
-                Console.Write("Enter first digit!");
-                sbyte firstNumber = Convert.ToSByte(Console.ReadLine(), CultureInfo.InvariantCulture);
-                Console.Write("Enter second digit!");
-                sbyte secondNumber = Convert.ToSByte(Console.ReadLine(), CultureInfo.InvariantCulture);
-                if (firstNumber >= 0 && firstNumber <= 10 && secondNumber >= 0 && secondNumber <= 10)
-                    return (firstNumber, secondNumber);
-                else
-                    Console.WriteLine("Invalid input!");
-            }
-            catch
-            {
-                Console.WriteLine("Invalid Input!");
-                continue;
-            }
-        } while (true);
-    }
-    public static void Main()
-    {
-        var (firstNumber, secondNumber) = GetInput();
-        sbyte answer = (sbyte)(firstNumber * secondNumber);
-        Console.WriteLine($"Answer is {answer}");
-    }
-}
+// class Program
+// {
+//     public static (sbyte, sbyte) GetInput()
+//     {
+//         do
+//         {
+//             try
+//             {
+//                 Console.Write("Enter first digit!");
+//                 sbyte firstNumber = Convert.ToSByte(Console.ReadLine(), CultureInfo.InvariantCulture);
+//                 Console.Write("Enter second digit!");
+//                 sbyte secondNumber = Convert.ToSByte(Console.ReadLine(), CultureInfo.InvariantCulture);
+//                 if (firstNumber >= 0 && firstNumber <= 10 && secondNumber >= 0 && secondNumber <= 10)
+//                     return (firstNumber, secondNumber);
+//                 else
+//                     Console.WriteLine("Invalid input!");
+//             }
+//             catch
+//             {
+//                 Console.WriteLine("Invalid Input!");
+//                 continue;
+//             }
+//         } while (true);
+//     }
+//     public static void Main()
+//     {
+//         var (firstNumber, secondNumber) = GetInput();
+//         sbyte answer = (sbyte)(firstNumber * secondNumber);
+//         Console.WriteLine($"Answer is {answer}");
+//     }
+// }
