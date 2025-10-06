@@ -2,7 +2,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 
-// ПРАКТИКА 1.1 (УСЛОВНЫЕ КОНСТРУКЦИИ)
+// ПРАКТИКА 1.1 (УСЛОВНЫЕ КОНСТРУКЦИИ).
 
 
 // Упражнение 1
